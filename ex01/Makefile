@@ -1,7 +1,7 @@
-NAME = ScalarConverter
+NAME = Serializer
 
-SRC = ScalarConverter.cpp\
-	main.cpp\
+SRC = Serializer.cpp\
+		main.cpp\
 
 OBJ = $(SRC:.cpp=.o)
 
