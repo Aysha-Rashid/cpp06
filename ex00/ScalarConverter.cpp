@@ -55,7 +55,8 @@ void ScalarConverter::convert(const std::string& literals)
                     std::cout << "char: '" << static_cast<unsigned char>(value) << "'" << std::endl;
                 } else {
                     std::cout << "char: Non displayable" << std::endl;
-                }            std::cout << "int: " << static_cast<int>(value) << std::endl;
+                }
+            std::cout << "int: " << static_cast<int>(value) << std::endl;
             std::cout << std::fixed << std::setprecision(1) << "double: " << value << std::endl;
             std::cout << std::fixed << std::setprecision(1) << "float: " << static_cast<float>(value) << "f" << std::endl;
         }
@@ -74,10 +75,10 @@ void ScalarConverter::convert(const std::string& literals)
                     std::cout << "char: '" << static_cast<unsigned char>(value) << "'" << std::endl;
                 } else {
                     std::cout << "char: Non displayable" << std::endl;
-                }            std::cout << "int: " << static_cast<int>(value) << std::endl;
+                }
+            std::cout << "int: " << static_cast<int>(value) << std::endl;
             std::cout << std::fixed << std::setprecision(1) << "double: " << static_cast<double>(value) << std::endl;
             std::cout << std::fixed << std::setprecision(1) << "float: " << value << "f" << std::endl;
         }
     }
 }
-
