@@ -1,8 +1,10 @@
 #ifndef BASE_HPP
 #define BASE_HPP
 #include <iostream>
-#include <cstdlib>  // For std::rand() and std::srand()
+#include <cstdlib>
 #include <ctime> 
+#include <stdexcept>
+
 class Base 
 {
     public:
@@ -11,7 +13,6 @@ class Base
         Base * generate(void);
         void identify(Base* p);
         void identify(Base& p);
-    // private:
 };
 
 #endif

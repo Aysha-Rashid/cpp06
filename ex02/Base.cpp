@@ -5,13 +5,13 @@
 
 Base::~Base()
 {
-    std::cout << "Base Constructor called" << std::endl;
+    std::cout << "Base Destructor called" << std::endl;
 }
 
 Base *Base::generate(void)
 {
     int success;
-    srand((unsigned) time(NULL)); // what does this exactly do?
+    srand((unsigned) time(NULL));
     success = rand() % 3;
     if (success == 0)
     {

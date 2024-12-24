@@ -1,6 +1,5 @@
 #include "Serializer.hpp"
 
-// learn Reinterpret casting for this
 Serializer::Serializer(){}
 Serializer::~Serializer(){}
 Serializer::Serializer(Serializer &copy){*this = copy;}

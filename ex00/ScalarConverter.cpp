@@ -11,7 +11,7 @@ void ScalarConverter::convert(const std::string& literals)
     if (literals.length() == 1 && !std::isdigit(literals[0])) {
         char ch = literals[0];
         std::cout << "the type is Char data" << std::endl;
-        std::cout << "char: '" << static_cast<char>(ch) << "'" << std::endl;
+        std::cout << "char: '" << static_cast<unsigned char>(ch) << "'" << std::endl;
         std::cout << "int: " << static_cast<int>(ch) << std::endl;
         std::cout << std::fixed << std::setprecision(1) << "double: " << static_cast<double>(ch) << std::endl;
         std::cout << std::fixed << std::setprecision(1) << "float: " << static_cast<float>(ch) << "f" << std::endl;
@@ -30,7 +30,7 @@ void ScalarConverter::convert(const std::string& literals)
         }
         std::cout << "the type is Int data" << std::endl;
         if (std::isprint(static_cast<unsigned char>(value))) {
-                std::cout << "char: '" << value << "'" << std::endl;
+                std::cout << "char: '" << static_cast<unsigned char>(value) << "'" << std::endl;
             } else {
                 std::cout << "char: Non displayable" << std::endl;
             }        
@@ -52,7 +52,7 @@ void ScalarConverter::convert(const std::string& literals)
             }
             std::cout << "the type is Double data" << std::endl;
             if (std::isprint(static_cast<unsigned char>(value))) {
-                    std::cout << "char: '" << value << "'" << std::endl;
+                    std::cout << "char: '" << static_cast<unsigned char>(value) << "'" << std::endl;
                 } else {
                     std::cout << "char: Non displayable" << std::endl;
                 }            std::cout << "int: " << static_cast<int>(value) << std::endl;
@@ -71,7 +71,7 @@ void ScalarConverter::convert(const std::string& literals)
             }
             std::cout << "the type is Float data" << std::endl;
             if (std::isprint(static_cast<unsigned char>(value))) {
-                    std::cout << "char: '" << value << "'" << std::endl;
+                    std::cout << "char: '" << static_cast<unsigned char>(value) << "'" << std::endl;
                 } else {
                     std::cout << "char: Non displayable" << std::endl;
                 }            std::cout << "int: " << static_cast<int>(value) << std::endl;
